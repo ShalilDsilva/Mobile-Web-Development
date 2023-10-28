@@ -1,0 +1,149 @@
+/* 
+Filename: styles.css
+Website Author: Shalil Dsilva
+Student id: 0810045 
+Copyright: 2023 - All rights reserved
+
+Color Guide:
+Black
+lightcyan
+lightseagreen
+green
+lightgreen
+
+
+Typography Guide:
+    Desktop / Tablet:  
+        label, button - 1.2em
+    
+    Mobile:
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        label,
+        button,
+        header - 1.5em
+
+*********************************
+=================
+Table of Contents
+=================
+1. Body Styles
+2. Header Styles 
+3. Main Styles 
+4. Responsive Styles
+*********************************
+*/
+
+
+/*******************
+1. Body Styles 
+********************/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+}
+
+label,
+button {
+    font-size: 1.2em;
+}
+
+/*******************
+2. Header Styles 
+********************/
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+/*******************
+3. Main Styles 
+********************/
+main {
+    color: white;
+    padding: 20px;
+}
+
+form {
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*******************
+4. Responsive Styles 
+********************/
+/* Mobile */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    form {
+        background-color: green;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    label,
+    button,
+    header {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 95%;
+        height: 40px;
+    }
+
+}

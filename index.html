@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Filename: index.html
+    Author: Shalil Dsilva
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Responsive Web Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Shalil Dsilva</h1>
+    </header>
+
+    <main>
+        <form id="contact-form">
+            <div class="form-row">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="checkbox">
+                <label>Yes</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label>No</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
