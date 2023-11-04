@@ -1,0 +1,111 @@
+/* 
+Filename: styles.css
+Website Author: Shalil Dsilva
+Student id: 0810045 
+Copyright: 2023 - All rights reserved
+
+Color Guide:
+Black
+lightcyan
+lightseagreen
+green
+lightgreen
+
+
+Typography Guide:
+    Desktop / Tablet:  
+        label, button - 1.2em
+    
+    Mobile:
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        label,
+        button,
+        header - 1.5em
+
+*********************************
+=================
+Table of Contents
+=================
+1. Body Styles
+2. Header Styles 
+3. Swiper Styles 
+4. Responsive Styles
+*********************************
+*/
+
+/*******************
+1. Body Styles 
+********************/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+}
+
+label,
+button {
+    font-size: 1.2em;
+}
+
+/*******************
+2. Header Styles 
+********************/
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/*******************
+3. Swiper Styles 
+********************/
+.swiper-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*******************
+4. Responsive Styles 
+********************/
+@media (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    label,
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+    input[type="radio"] {
+        display: inline;
+        width: auto;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="radio"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="submit"],
+    textarea,
+    label,
+    button,
+    header {
+        font-size: 1.5em;
+    }
+}

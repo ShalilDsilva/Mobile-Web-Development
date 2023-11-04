@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Part Form with Swiper and Validation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Shalil Dsilva</h1>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Personal Information -->
+            <div class="swiper-slide">
+                <h2>Personal Information</h2>
+                <form id="personal-info-form">
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female" required> Female
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="swiper-slide">
+                <h2>Contact Information</h2>
+                <form id="contact-info-form">
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="abc@gmail.com" required pattern="^[\w\.-]+@[\w\.-]+\.\w+$
+                        " oninvalid="this.setCustomValidity('Please enter a valid Email address (e.g., abc@gmail.com)')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" size="15" placeholder="888-888-8888" required
+                            pattern="^\d{3}-\d{3}-\d{4}$"
+                            oninvalid="this.setCustomValidity('Please enter a valid US phone number (e.g., 123-456-7890)')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="form-row">
+                        <label for="address">Address:</label>
+                        <textarea id="address" placeholder="address" required
+                            oninvalid="this.setCustomValidity('Please enter your address')"
+                            oninput="this.setCustomValidity('')"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Payment Information -->
+            <div class="swiper-slide">
+                <h2>Payment Information</h2>
+                <form id="payment-info-form">
+                    <div class="form-row">
+                        <label for="ccnumber">Credit Card Number:</label>
+                        <input type="text" id="ccnumber" name="ccnumber">
+                    </div>
+                    <div class="form-row">
+                        <label for="expiration">Expiration Date:</label>
+                        <input type="date" id="expiration" name="expiration">
+                    </div>
+                    <div class="form-row">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
